@@ -863,7 +863,7 @@ Make objects move as if they are subject to the laws of physics. If you're creat
 
 ## 3D
 
-Support for 3D in GDevelop. 
+Support for 3D in GDevelop: this provides 3D objects and the common features for all 3D objects. 
 
 | Expression | Description |  |
 |-----|-----|-----|
@@ -902,7 +902,7 @@ _No expressions for this object._
 
 ## 3D capability (from extension 3D)
 
-Move the object in 3D space. 
+Common features for all 3D objects: position in 3D space (including the Z axis, in addition to X and Y), size (including depth, in addition to width and height), rotation (on X and Y axis, in addition to the Z axis), scale (including Z axis, in addition to X and Y), flipping (on Z axis, in addition to horizontal (Y)/vertical (X) flipping). 
 
 | Expression | Description |  |
 |-----|-----|-----|
@@ -1347,6 +1347,19 @@ Simulate realistic 3D physics for this object including gravity, forces, collisi
 | `Object.Physics3D::MassCenterY()` | Mass center Y ||
 | `Object.Physics3D::Restitution()` | Return the object restitution. Energy conservation on collision. The combined restitution from two bodies is calculated as 'max(bodyA.restitution, bodyB.restitution)'.. ||
 | `Object.Physics3D::WorldScale()` | Return the world scale. ||
+
+## 3D physics car (from extension 3D physics engine)
+
+Simulate a realistic car using the 3D physics engine. [Read more explanations about it.](/gdevelop5/behaviors/physics3d)
+
+| Expression | Description |  |
+|-----|-----|-----|
+| `Object.PhysicsCar3D::CurrentGear()` | Return the current gear (-1 = reverse, 0 = neutral, 1 = 1st gear). ||
+| `Object.PhysicsCar3D::EngineInertia()` | Return the engine inertia (kg·m²). It slows down car acceleration. ||
+| `Object.PhysicsCar3D::EngineSpeed()` | Return the current engine speed (RPM). ||
+| `Object.PhysicsCar3D::EngineSpeedMax()` | Return the engine max speed (RPM). ||
+| `Object.PhysicsCar3D::EngineTorqueMax()` | Return the engine max torque (N·m). It allows cars to climb steep slopes and push heavy obstacles. ||
+| `Object.PhysicsCar3D::SteerAngle()` | Return the current steer angle (in degree). The value is negative when cars turn left. ||
 
 ## 3D physics character (from extension 3D physics engine)
 
