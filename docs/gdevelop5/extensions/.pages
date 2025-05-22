@@ -71,6 +71,7 @@ nav:
         - Konami Code: konami-code
         - Cursor object: mouse-helper
         - Mouse Pointer Lock: mouse-pointer-lock
+        - 3D car keyboard mapper: physics-car3dkey-mapper
         - 3D character keyboard mapper: physics-character3dkey-mapper
         - Pinching gesture: pinch-gesture
         - Multitouch joystick and buttons (sprite): sprite-multitouch-joystick
@@ -104,6 +105,7 @@ nav:
         - Stay On Screen: stay-on-screen
         - Stick objects to others: sticker
         - Timed Back and Forth Movement: timed-back-and-forth-movement
+        - Top-down movement animator: top-down-movement-animator
         - Make object travel to random positions: travel-to-random-positions
         - Turret movement: turret
     - Network:
@@ -215,7 +217,6 @@ nav:
             - Rectangular Movement (deprecated): rectangular-movement
             - Sine (or ellipsis) Movement (deprecated): sine-movement
             - Top-down corner sliding: top-down-corner-sliding
-            - Top-down movement animator: top-down-movement-animator
             - Trampoline Platform: trampoline-platform
             - Top-down walk: walk3d
         - Network:
@@ -247,6 +248,5 @@ nav:
             - Make it rain: make-it-rain
             - Reflection: reflection
             - 3D Sky and sun: sky3d
-            - Sprite-based lighting: sprite-based-lighting
             - Advanced 3D tween: tween3d
     - ...
