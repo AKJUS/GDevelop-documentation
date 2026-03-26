@@ -55,6 +55,7 @@ nav:
     - General:
         - Array tools: array-tools
         - Variables copier: extended-variables
+        - 3D raycast: raycaster3d
         - Repeat every X seconds: repeat-every-xseconds
     - Input:
         - Android back button: back-button
@@ -190,7 +191,6 @@ nav:
             - Load images from a URL: load-image-from-url
             - Maze Generator: maze-generator
             - 3D model 9-patch: model9patch3d
-            - 3D raycast: raycaster3d
             - Variables/References: references
             - 3D sprite: sprite3d
         - Input:

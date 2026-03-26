@@ -5,11 +5,6 @@ Find 3D objects that cross a line.
 
 **Authors and contributors** to this experimental extension: [D8H](https://gd.games/D8H).
 
-!!! warning
-    This is an extension made by a community member and it only got through a
-    light review by the GDevelop extension team. As such, we can't guarantee it
-    meets all the quality standards of fully reviewed extensions.
-
 ---
 
 It can be useful to:

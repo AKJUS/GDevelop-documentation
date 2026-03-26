@@ -94,6 +94,7 @@ Read more about this:
 |---|---|---|---|
 |<img src="https://asset-resources.gdevelop.io/public-resources/Icons/Line Hero Pack/Master/SVG/Text Editing/9bfb52500e68d0fd164b1e30bc696e40566187245b80c345848379f40bb6fad7_Text Editing_bullet_points_list.svg" class="extension-icon"></img>|**Array tools**|Array utilities: search, sort, shuffle, slice, concat, reverse, pop, random element access.|[Read more...](/gdevelop5/extensions/array-tools)|
 |<img src="https://resources.gdevelop-app.com/assets/Icons/variable-box.svg" class="extension-icon"></img>|**Variables copier**|Copy structure and array variables.|[Read more...](/gdevelop5/extensions/extended-variables)|
+|<img src="https://asset-resources.gdevelop.io/public-resources/Icons/8419f46b76bce482c14b4c03b4141a64d457e4cdc92686f3470381f5d2694abd_ray-start-arrow.svg" class="extension-icon"></img>|**3D raycast**|Find 3D objects that cross a line.|[Read more...](/gdevelop5/extensions/raycaster3d)|
 |<img src="https://resources.gdevelop-app.com/assets/Icons/repeat.svg" class="extension-icon"></img>|**Repeat every X seconds**|Trigger an action repeatedly at a configurable time interval in seconds.|[Read more...](/gdevelop5/extensions/repeat-every-xseconds)|
 
 ### Input
@@ -282,7 +283,6 @@ guarantee they meet all the quality standards of fully reviewed extensions.
 |<img src="https://resources.gdevelop-app.com/assets/Icons/file-download.svg" class="extension-icon"></img>|**Load images from a URL**|Adds multiple actions to load images from a URL into the game.|[Read more...](/gdevelop5/extensions/load-image-from-url)|
 |<img src="https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Graphic Design/Graphic Design_grid.svg" class="extension-icon"></img>|**Maze Generator**|Create a maze made of a grid of rectangular cells. Walls are created randomly so that every cell is reachable through a random path through the maze. |[Read more...](https://luxon5.itch.io/gdevelop-maze-extension-demo) ([reference](/gdevelop5/extensions/maze-generator))|
 |<img src="https://asset-resources.gdevelop.io/public-resources/Icons/ff2624a18972ac70bedc9ef990d9ddbc894c3a7b6e46a75ace8e9572c9aa5a50_select-group.svg" class="extension-icon"></img>|**3D model 9-patch**|3D platforms and walls.|[Read more...](/gdevelop5/extensions/model9patch3d)|
-|<img src="https://asset-resources.gdevelop.io/public-resources/Icons/8419f46b76bce482c14b4c03b4141a64d457e4cdc92686f3470381f5d2694abd_ray-start-arrow.svg" class="extension-icon"></img>|**3D raycast**|Find 3D objects that cross a line.|[Read more...](/gdevelop5/extensions/raycaster3d)|
 |<img src="https://resources.gdevelop-app.com/assets/Icons/variable-box.svg" class="extension-icon"></img>|**Variables/References**|Adds references and pointers for variables.|[Read more...](/gdevelop5/extensions/references)|
 |<img src="https://asset-resources.gdevelop.io/public-resources/Icons/3bd33ec77ed20d3f631c6c92884728b375aa2879174bc9f289c864d0e0383d59_ghost-outline.svg" class="extension-icon"></img>|**3D sprite**|An animated sprite in 3D.|[Read more...](/gdevelop5/objects/sprite/) ([reference](/gdevelop5/extensions/sprite3d))|
 
