@@ -53,9 +53,11 @@ To solve this, you must always use the **steamcmd** command line tool to upload 
 
 - Start by extracting the macOS zip file somewhere. Use Linux or macOS `unzip` command line tool. **Windows won't work** as it will break the "symlinks" when extracting the zip file. Extract the files in a folder called `mac`. You should have a single folder, "Your Game.app" inside this `mac` folder.
 
-  !!! danger
 
-        Windows, and some archiver softwares on Linux, will break the "symlinks" when extracting the zip file - making it impossible to run the app. Use `unzip` on macOS or Linux.
+!!! danger
+
+    Windows, and some archiver softwares on Linux, will break the "symlinks" when extracting the zip file - making it impossible to run the app. Use `unzip` on macOS or Linux.
+
 
 - Create a [Build Config file](https://partner.steamgames.com/doc/sdk/uploading) called `steam-upload-config.vdf`. Put it next to the folder called `mac`. This is an example:
 
