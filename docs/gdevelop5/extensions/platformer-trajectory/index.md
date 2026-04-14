@@ -24,12 +24,12 @@ Configure the height of a jump and evaluate the jump trajectory.
 
 ### Behavior properties
 
-- **Jump height** (🔢 Number). Default value is `2.163821760101824e-317`.
+- **Jump height** (🔢 Number). Default value is `2.030669092285024e-317`.
 
 ??? quote "See internal technical details"
 
 
-    - **Jump height** is stored as `JumpHeight` (Number). Default value is `2.163821760101824e-317`.
+    - **Jump height** is stored as `JumpHeight` (Number). Default value is `2.030669092285024e-317`.
     > This behavior must be used on an object also having a behavior with type "PlatformBehavior::PlatformerObjectBehavior". This is stored on property `PlatformerCharacter`.
 
 
