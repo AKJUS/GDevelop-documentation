@@ -229,8 +229,6 @@ nav:
             - Align object on the screen: align-object
             - ChatBubble: chat-bubble
             - Clock: clock
-            - Dialog Box: dialog-box
-            - Flexbox: flex-box
             - Pause when losing focus: pause-focus-lost
             - Scrollbar: scrollbar
             - Star Rating: star-rating
