@@ -147,6 +147,7 @@ nav:
         - Flash object: flash
         - Flash layer: flash-layer
         - Flash and transition painter: flash-transition-painter
+        - 3D lights: light3d
         - Marching Squares (experimental): marching-squares
         - Slice a 2D object into pieces: object-slicer
         - 3D particle emitter: particle-emitter3d
