@@ -25,6 +25,7 @@ This extension adds features to the built-in 3D.
 - Linear interpolation
 - Look At
 - Distance between 3D objects
+- Angle between 3D objects
 - Bone control
 - Morph target control
 - Access child objects of 3D objects
@@ -351,7 +352,7 @@ Rotates the 3D object so that its local +X direction points toward the target 3D
 
     - Parameter 1: 👾 Object
     - Parameter 2 (🧩 Behavior): 3D capability
-    - Parameter 3 (👾 Object): Target 3D Object
+    - Parameter 3 (👾 Object): Target 3D object
     - Parameter 4 (🧩 Behavior): Target 3D capability
     - Parameter 5 (🔤 String): The point of the target 3D object to look at (one of: "Center point", "Origin point")
 
@@ -485,21 +486,40 @@ Each time the scene starts, the listener is automatically set on the base layer�
 
 ## Conditions
 
-**↔️Check the distance between two objects in 3D**  
-Checks the distance between two objects (origin points) in 3D.
+**↗️Check angle to 3D objects**  
+Checks the unsigned angle (in degrees, range 0 to 180) between the object's local X-axis and the direction to the target in 3D space.
 
 ??? quote "See parameters & details"
 
     - Parameter 1: 👾 Object
     - Parameter 2 (🧩 Behavior): 3D capability
-    - Parameter 3: 👾 Object
+    - Parameter 3 (👾 Object): Target 3D object
     - Parameter 4 (🧩 Behavior): Target 3D capability
-    - Parameter 5 (🔤 String): Operator (one of: "=", "<", ">", "≤", "≥", "≠")
-    - Parameter 6 (🔢 Number): Distance
+    - Parameter 5 (🔤 String): Points of the target 3D object (one of: "Center point", "Origin point")
+    - Parameter 6 (🔤 String): Operator (one of: "=", "<", ">", "≤", "≥", "≠")
+    - Parameter 7 (🔢 Number): Angle
 
-    > Technical note: parameters 0, 7 are internal parameters handled by GDevelop.
+    > Technical note: parameters 0, 8 are internal parameters handled by GDevelop.
 
-    > Technical note: this condition internal type (in GDevelop JSON) is `A3F::CheckDistance`.
+    > Technical note: this condition internal type (in GDevelop JSON) is `A3F::CheckAngleToObjects`.
+
+**↔️Check distance between two objects in 3D**  
+Checks the distance between two objects in 3D.
+
+??? quote "See parameters & details"
+
+    - Parameter 1: 👾 Object
+    - Parameter 2 (🧩 Behavior): 3D capability
+    - Parameter 3 (🔤 String): Points of the 3D object (one of: "Center point", "Origin point")
+    - Parameter 4 (👾 Object): Target Object
+    - Parameter 5 (🧩 Behavior): Target 3D capability
+    - Parameter 6 (🔤 String): Points of the target 3D object (one of: "Center point", "Origin point")
+    - Parameter 7 (🔤 String): Operator (one of: "=", "<", ">", "≤", "≥", "≠")
+    - Parameter 8 (🔢 Number): Distance
+
+    > Technical note: parameters 0, 9 are internal parameters handled by GDevelop.
+
+    > Technical note: this condition internal type (in GDevelop JSON) is `A3F::CheckDistanceV2`.
 
 **🥛Check opacity**  
 Check the opacity of the 3D object, or the first opacity found among its children.  
@@ -521,9 +541,15 @@ This condition can be used for non-3D objects as well, but in those cases the op
 
 | Expression | Description |  |
 |-----|-----|-----|
-| `A3F::DistanceObjects(object, object)` | Returns the distance between objects in 3D. (Distance between origin points)This expression always returns 0 when a 2D object is selected. ||
+| `A3F::AngleToObjects(object, object, string)` | Return the unsigned angle (in degrees, range 0 to 180) between the object's local X-axis and the direction to the target in 3D space.This expression always returns 0 when a 2D object is selected. ||
 | | _👾 Object_ | Object |
-| | _👾 Object_ | Target Object |
+| | _👾 Object_ | Target 3D object |
+| | _🔤 String_ | Points of the target 3D object |
+| `A3F::DistanceObjectsV2(object, string, object, string)` | Returns the distance between objects in 3D.This expression always returns 0 when a 2D object is selected. ||
+| | _👾 Object_ | Object |
+| | _🔤 String_ | Points of the 3D object |
+| | _👾 Object_ | Target 3D object |
+| | _🔤 String_ | Points of the target 3D object |
 | `A3F::Opacity(object)` | Returns the opacity of the 3D object, or the first opacity found among its children. ||
 | | _👾 Object_ | Object |
 

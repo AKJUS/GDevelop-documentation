@@ -1,7 +1,7 @@
 # Playgama Bridge
 
 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMTcgMTU0LjM2MlY5Ni4wMDAxSDIyMy4xMjlWNDE2SDExN1YzNTkuMjU0SDE1OC40NFYxNTQuMzYySDExN1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0zOTUgMTU0LjM2MlY5NkgyODguODcxVjQxNkgzOTVWMzU5LjI1NEgzNTMuNTZWMTU0LjM2MkgzOTVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" class="extension-icon"></img>
-Cross-platform HTML5 publishing SDK: ads, payments, social features via Playgama.
+One SDK for cross-platform publishing HTML5 games.
 
 **Authors and contributors** to this experimental extension: [playgama](https://gd.games/playgama).
 
@@ -174,6 +174,17 @@ Get Server Time.
 
     > Technical note: this action internal type (in GDevelop JSON) is `PlaygamaBridge::GetServerTime`.
 
+**Hide Advanced Banners**  
+Hide Advanced Banners.
+
+??? quote "See parameters & details"
+
+    There are no parameters to set for this action.
+
+    > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `PlaygamaBridge::HideAdvancedBanners`.
+
 **Hide Banner**  
 Hide Banner.
 
@@ -318,12 +329,23 @@ Rate.
 
     > Technical note: this action internal type (in GDevelop JSON) is `PlaygamaBridge::Rate`.
 
+**Send Custom Message**  
+Send Custom Message.
+
+??? quote "See parameters & details"
+
+    - Parameter 1 (🔤 String): Id
+
+    > Technical note: parameters 0, 2 are internal parameters handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `PlaygamaBridge::SendCustomMessage`.
+
 **Send Message**  
 Send Message.
 
 ??? quote "See parameters & details"
 
-    - Parameter 1 (🔤 String): Message (one of: "GAME_READY", "IN_GAME_LOADING_STARTED", "IN_GAME_LOADING_STOPPED", "GAMEPLAY_STARTED", "GAMEPLAY_STOPPED", "PLAYER_GOT_ACHIEVEMENT")
+    - Parameter 1 (🔤 String): Message (one of: "GAME_READY", "LEVEL_STARTED", "LEVEL_COMPLETED", "LEVEL_FAILED", "LEVEL_PAUSED", "LEVEL_RESUMED", "IN_GAME_LOADING_STARTED", "IN_GAME_LOADING_STOPPED", "GAMEPLAY_STARTED", "GAMEPLAY_STOPPED", "PLAYER_GOT_ACHIEVEMENT")
 
     > Technical note: parameters 0, 2 are internal parameters handled by GDevelop.
 
@@ -394,6 +416,17 @@ Share.
     > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
 
     > Technical note: this action internal type (in GDevelop JSON) is `PlaygamaBridge::Share`.
+
+**Show Advanced Banners**  
+Show Advanced Banners.
+
+??? quote "See parameters & details"
+
+    - Parameter 1 (🔤 String): Placement (optional)
+
+    > Technical note: parameters 0, 2 are internal parameters handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `PlaygamaBridge::ShowAdvancedBanners`.
 
 **Show Banner**  
 Show Banner.
@@ -552,6 +585,17 @@ Is Add To Home Screen Supported.
     > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
 
     > Technical note: this condition internal type (in GDevelop JSON) is `PlaygamaBridge::IsAddToHomeScreenSupported`.
+
+**Is Advanced Banners Supported**  
+Is Advanced Banners Supported.
+
+??? quote "See parameters & details"
+
+    There are no parameters to set for this condition.
+
+    > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
+
+    > Technical note: this condition internal type (in GDevelop JSON) is `PlaygamaBridge::IsAdvancedBannersSupported`.
 
 **Is Banner Supported**  
 Is Banner Supported.
@@ -904,6 +948,61 @@ On Add To Home Screen Completed.
     > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
 
     > Technical note: this condition internal type (in GDevelop JSON) is `PlaygamaBridge::OnAddToHomeScreenCompleted`.
+
+**On Advanced Banners Failed**  
+On Advanced Banners Failed.
+
+??? quote "See parameters & details"
+
+    There are no parameters to set for this condition.
+
+    > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
+
+    > Technical note: this condition internal type (in GDevelop JSON) is `PlaygamaBridge::OnAdvancedBannersFailed`.
+
+**On Advanced Banners Hidden**  
+On Advanced Banners Hidden.
+
+??? quote "See parameters & details"
+
+    There are no parameters to set for this condition.
+
+    > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
+
+    > Technical note: this condition internal type (in GDevelop JSON) is `PlaygamaBridge::OnAdvancedBannersHidden`.
+
+**On Advanced Banners Loading**  
+On Advanced Banners Loading.
+
+??? quote "See parameters & details"
+
+    There are no parameters to set for this condition.
+
+    > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
+
+    > Technical note: this condition internal type (in GDevelop JSON) is `PlaygamaBridge::OnAdvancedBannersLoading`.
+
+**On Advanced Banners Shown**  
+On Advanced Banners Shown.
+
+??? quote "See parameters & details"
+
+    There are no parameters to set for this condition.
+
+    > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
+
+    > Technical note: this condition internal type (in GDevelop JSON) is `PlaygamaBridge::OnAdvancedBannersShown`.
+
+**On Advanced Banners State Changed**  
+On Advanced Banners State Changed.
+
+??? quote "See parameters & details"
+
+    There are no parameters to set for this condition.
+
+    > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
+
+    > Technical note: this condition internal type (in GDevelop JSON) is `PlaygamaBridge::OnAdvancedBannersStateChanged`.
 
 **On Authorize Player Completed**  
 On Authorize Player Completed.
@@ -1379,6 +1478,7 @@ Platform On Pause State Changed.
 | | _🔢 Number_ | Achievement Index |
 | | _🔤 String_ | Property |
 | `PlaygamaBridge::AchievementsCount()` | Achievements Count. ||
+| `PlaygamaBridge::AdvancedBannersState()` | Advanced Banners State. ||
 | `PlaygamaBridge::BannerState()` | Banner State. ||
 | `PlaygamaBridge::DefaultStorageType()` | Default Storage Type. ||
 | `PlaygamaBridge::DeviceType()` | Device Type. ||
