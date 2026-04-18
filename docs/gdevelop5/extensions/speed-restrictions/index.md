@@ -30,12 +30,12 @@ Limit the maximum speed an object will move from (non-physics) forces.
 
 ### Behavior properties
 
-- **Maximum speed (pixels/second)** (🔢 Number). Default value is `0`.
+- **Maximum speed** (🔢 Number, Speed). Default value is `1000`.
 
 ??? quote "See internal technical details"
 
 
-    - **Maximum speed (pixels/second)** is stored as `MaximumSpeed` (Number). Default value is `0`.
+    - **Maximum speed** is stored as `MaximumSpeed` (Number). Unit is PixelSpeed. Default value is `1000`.
 
 _No expressions for this behavior._
 
@@ -46,12 +46,12 @@ Limit the maximum speed an object will move from physics forces.
 
 ### Behavior properties
 
-- **Maximum speed (pixels/second)** (🔢 Number). Default value is `3.949315716294588e-317`.
+- **Maximum speed** (🔢 Number, Speed). Default value is `1000`.
 
 ??? quote "See internal technical details"
 
 
-    - **Maximum speed (pixels/second)** is stored as `MaximumSpeed` (Number). Default value is `3.949315716294588e-317`.
+    - **Maximum speed** is stored as `MaximumSpeed` (Number). Unit is PixelSpeed. Default value is `1000`.
     > This behavior must be used on an object also having a behavior with type "Physics2::Physics2Behavior". This is stored on property `PhysicsBehavior`.
 
 
@@ -64,12 +64,12 @@ Limit the maximum rotation speed of an object from physics forces.
 
 ### Behavior properties
 
-- **Maximum rotation speed (degrees/second)** (🔢 Number). Default value is `3.961896603900289e-317`.
+- **Maximum rotation speed** (🔢 Number, Angular speed). Default value is `3600`.
 
 ??? quote "See internal technical details"
 
 
-    - **Maximum rotation speed (degrees/second)** is stored as `MaximumRotationSpeed` (Number). Default value is `3.961896603900289e-317`.
+    - **Maximum rotation speed** is stored as `MaximumRotationSpeed` (Number). Unit is AngularSpeed. Default value is `3600`.
     > This behavior must be used on an object also having a behavior with type "Physics2::Physics2Behavior". This is stored on property `PhysicsBehavior`.
 
 

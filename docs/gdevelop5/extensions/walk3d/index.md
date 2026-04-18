@@ -42,15 +42,6 @@ Turn and move objects forward and sideways.
     - **Deceleration** is stored as `TranslationDeceleration` (Number). Unit is PixelAcceleration. Default value is `1600`.
     - **Maximum speed** is stored as `TranslationSpeedMax` (Number). Unit is PixelSpeed. Default value is `400`.
 
-### Behavior shared properties
-
-- **Sin** (🔢 Number). Default value is `0`.
-
-??? quote "See internal technical details"
-
-
-    - **Sin** is stored as `Sin` (Number). Default value is `0`.
-
 ### Behavior actions
 
 **Current forward speed**  
