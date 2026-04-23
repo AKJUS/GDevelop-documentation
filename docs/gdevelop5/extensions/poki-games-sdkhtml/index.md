@@ -49,6 +49,40 @@ Inform Poki gameplay stopped.
 
     > Technical note: this action internal type (in GDevelop JSON) is `PokiGamesSDKHtml::CallGameplayStop`.
 
+**Get token**  
+Get the current Poki token and store it in a variable.
+
+??? quote "See parameters & details"
+
+    - Parameter 1 (🗄️ Any variable): Variable where the token will be stored
+
+    > Technical note: parameters 0, 2 are internal parameters handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `PokiGamesSDKHtml::GetToken`.
+
+**Get user**  
+Get the current Poki user and store it in a structure variable.
+
+??? quote "See parameters & details"
+
+    - Parameter 1 (🗄️ Any variable): Structure variable where the user will be stored
+      The result structure contains `username` and `avatarUrl`.
+
+    > Technical note: parameters 0, 2 are internal parameters handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `PokiGamesSDKHtml::GetUser`.
+
+**Login**  
+Prompt the player to log in with Poki.
+
+??? quote "See parameters & details"
+
+    There are no parameters to set for this action.
+
+    > Technical note: parameters 0, 1 are internal parameters handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `PokiGamesSDKHtml::Login`.
+
 **Measure event**  
 Measure an event for analytics.
 
