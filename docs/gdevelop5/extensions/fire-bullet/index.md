@@ -95,52 +95,6 @@ Fire bullets in the direction of a given angle at a specified speed. Call this c
 
     > Technical note: this action internal type (in GDevelop JSON) is `FireBullet::FireBullet::Fire`.
 
-**Fire bullets from 3D camera**  
-Fire bullets from the camera at a specified speed. Usually, the invisible object with player controls fires the bullets. Call this continuously, the action checks readiness internally — no extra timer or check needed.
-
-??? quote "See parameters & details"
-
-    - Parameter 0: 👾 Object
-    - Parameter 1: 🧩 Behavior
-    - Parameter 2 (🧩 Behavior): 3D capability
-    - Parameter 3 (🔢 Number): Forward offset
-      Offset on local X axis of the camera.
-    - Parameter 4 (🔢 Number): Offset to the right
-      Offset on local Y axis of the camera.
-    - Parameter 5 (🔢 Number): Upward offset
-      Offset on local Z axis of the camera.
-    - Parameter 6 (👾 Object): The bullet object
-    - Parameter 7 (🧩 Behavior): 3D capability
-    - Parameter 8 (🧩 Behavior): 3D physics engine
-    - Parameter 9 (🔢 Number): Speed of the bullet, in pixels per second
-
-    > Technical note: parameter 10 is an internal parameter handled by GDevelop.
-
-    > Technical note: this action internal type (in GDevelop JSON) is `FireBullet::FireBullet::FireForwardCamera3D`.
-
-**Fire bullets from 3D object**  
-Fire bullets from the object at a specified speed. Call this continuously, the action checks readiness internally — no extra timer or check needed.
-
-??? quote "See parameters & details"
-
-    - Parameter 0: 👾 Object
-    - Parameter 1: 🧩 Behavior
-    - Parameter 2 (🧩 Behavior): 3D capability
-    - Parameter 3 (🔢 Number): Forward offset
-      Offset on local X axis of the object.
-    - Parameter 4 (🔢 Number): Offset to the right
-      Offset on local Y axis of the object.
-    - Parameter 5 (🔢 Number): Upward offset
-      Offset on local Z axis of the object.
-    - Parameter 6 (👾 Object): The bullet object
-    - Parameter 7 (🧩 Behavior): 3D capability
-    - Parameter 8 (🧩 Behavior): 3D physics engine
-    - Parameter 9 (🔢 Number): Speed of the bullet, in pixels per second
-
-    > Technical note: parameter 10 is an internal parameter handled by GDevelop.
-
-    > Technical note: this action internal type (in GDevelop JSON) is `FireBullet::FireBullet::FireForwardObject3D`.
-
 **Fire bullets toward an object**  
 Fire bullets toward an object at a specified speed. Call this continuously, the action checks readiness internally — no extra timer or check needed.
 
