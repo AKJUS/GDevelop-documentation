@@ -26,12 +26,6 @@ Read on to learn more about revenue sharing, transactions, and other agreements 
 
 When an asset is sold on GDevelop's Asset Store, the purchase is distributed as follows: 40% for the Asset creator, 33% for GDevelop, and 27% for government taxes (VAT) and payment provider fees.
 
-Note that:
-
-- The VAT and payment providers' fees might amount to something larger than 27%. In this case, **you still keep 40%**, and it's us, GDevelop, who will have our margin reduced.
-- A cut of 33% might sound a bit higher than some other stores - but other stores express their percentage without mentioning VAT. So the real percentage you are earning is less than what they advertise. For example, if a store says they take 30%, it does not include the VAT and payment process fee, so you will earn way less than 70% (probably something between 25% and 45% of the total price after VAT and additional fees).
-- An interesting feature of the GDevelop asset store is that it gives **ready-to-use objects** for creators' games. This means the value someone gets when buying an asset in GDevelop is higher: they receive something we prepared as an object ready to be used (no manual work is involved).
-
 !!! note
 
     Earnings from GDevelop paying services (including [premium licenses](https://gdevelop.io/pricing)) are reinvested in internet hosting fees, engine development, product research, and feature development.
