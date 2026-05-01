@@ -213,43 +213,16 @@ Compare the camera position on Z axis.
 | `Scene3D::CameraFarPlane(layer name, number)` | Return the camera far plane distance. ||
 | | _🔤 Layer name (String)_ | Layer _Optional_. |
 | | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraForwardX(layer name, number)` | Return the camera forward vector X component. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraForwardY(layer name, number)` | Return the camera forward vector Y component. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraForwardZ(layer name, number)` | Return the camera forward vector Z component. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
 | `Scene3D::CameraFov(layer name, number)` | Return the camera field of view. ||
 | | _🔤 Layer name (String)_ | Layer _Optional_. |
 | | _🔢 Number_ | Camera number (default : 0) _Optional_. |
 | `Scene3D::CameraNearPlane(layer name, number)` | Return the camera near plane distance. ||
 | | _🔤 Layer name (String)_ | Layer _Optional_. |
 | | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraRightX(layer name, number)` | Return the camera right vector X component. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraRightY(layer name, number)` | Return the camera right vector Y component. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraRightZ(layer name, number)` | Return the camera right vector Z component. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
 | `Scene3D::CameraRotationX(layer name, number)` | Return the camera rotation on X axis. ||
 | | _🔤 Layer name (String)_ | Layer _Optional_. |
 | | _🔢 Number_ | Camera number (default : 0) _Optional_. |
 | `Scene3D::CameraRotationY(layer name, number)` | Return the camera rotation on Y axis. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraUpX(layer name, number)` | Return the camera up vector X component. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraUpY(layer name, number)` | Return the camera up vector Y component. ||
-| | _🔤 Layer name (String)_ | Layer _Optional_. |
-| | _🔢 Number_ | Camera number (default : 0) _Optional_. |
-| `Scene3D::CameraUpZ(layer name, number)` | Return the camera up vector Z component. ||
 | | _🔤 Layer name (String)_ | Layer _Optional_. |
 | | _🔢 Number_ | Camera number (default : 0) _Optional_. |
 | `Scene3D::CameraZ(layer name, number)` | Return the camera position on Z axis. ||
@@ -643,18 +616,9 @@ Compare the Z position (the "elevation").
 |-----|-----|-----|
 | `Object.Object3D::CenterZ()` | Return the Z position of the center of rotation. ||
 | `Object.Object3D::Depth()` | Return the depth (size on Z axis). ||
-| `Object.Object3D::ForwardX()` | Return the object forward vector X component. ||
-| `Object.Object3D::ForwardY()` | Return the object forward vector Y component. ||
-| `Object.Object3D::ForwardZ()` | Return the object forward vector Z component. ||
-| `Object.Object3D::RightX()` | Return the object right vector X component. ||
-| `Object.Object3D::RightY()` | Return the object right vector Y component. ||
-| `Object.Object3D::RightZ()` | Return the object right vector Z component. ||
 | `Object.Object3D::RotationX()` | Return the rotation on X axis. ||
 | `Object.Object3D::RotationY()` | Return the rotation on Y axis. ||
 | `Object.Object3D::ScaleZ()` | Return the scale on Z axis of an object (default scale is 1). ||
-| `Object.Object3D::UpX()` | Return the object up vector X component. ||
-| `Object.Object3D::UpY()` | Return the object up vector Y component. ||
-| `Object.Object3D::UpZ()` | Return the object up vector Z component. ||
 | `Object.Object3D::Z()` | Return the Z position (the "elevation"). ||
 
 ### Effect "Ambient light"
