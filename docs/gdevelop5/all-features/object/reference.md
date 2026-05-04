@@ -284,6 +284,9 @@ Add a force to an object. The object will move according to all of the forces it
 
     > Technical note: this action internal type (in GDevelop JSON) is `AddForceAL`.
 
+!!! tip
+    Forces can be "instant" or "permanent". An "instant" force only moves the object during one frame. A "permanent" force keeps applying every frame; it should not be applied at each frame, otherwise forces will accumulate.
+
 **Add a force to move toward an object**  
 Add a force to an object to make it move toward another.
 
@@ -295,6 +298,9 @@ Add a force to an object to make it move toward another.
     - Parameter 3: forceMultiplier
 
     > Technical note: this action internal type (in GDevelop JSON) is `AddForceTowardObject`.
+
+!!! tip
+    Forces can be "instant" or "permanent". An "instant" force only moves the object during one frame. A "permanent" force keeps applying every frame; it should not be applied at each frame, otherwise forces will accumulate.
 
 **Add a force to move toward a position**  
 Add a force to an object to make it move toward a position.
@@ -309,6 +315,9 @@ Add a force to an object to make it move toward a position.
 
     > Technical note: this action internal type (in GDevelop JSON) is `AddForceTowardPosition`.
 
+!!! tip
+    Forces can be "instant" or "permanent". An "instant" force only moves the object during one frame. A "permanent" force keeps applying every frame; it should not be applied at each frame, otherwise forces will accumulate.
+
 **Add a force**  
 Add a force to an object. The object will move according to all of the forces it has.
 
@@ -320,6 +329,9 @@ Add a force to an object. The object will move according to all of the forces it
     - Parameter 3: forceMultiplier
 
     > Technical note: this action internal type (in GDevelop JSON) is `AddForceXY`.
+
+!!! tip
+    Forces can be "instant" or "permanent". An "instant" force only moves the object during one frame. A "permanent" force keeps applying every frame; it should not be applied at each frame, otherwise forces will accumulate.
 
 **Layer**  
 Move the object to a different layer.
@@ -471,6 +483,9 @@ Pause an object timer.
 
     > Technical note: this action internal type (in GDevelop JSON) is `PauseObjectTimer`.
 
+!!! tip
+    Object timers are NOT started automatically when an object instance is created. Make sure to start the timer (e.g. with the "Start (or reset) an object timer" action) before using it.
+
 **Add value to object array variable**  
 Adds a boolean to the end of an object array variable.
 
@@ -539,6 +554,9 @@ Delete an object timer from memory.
 
     > Technical note: this action internal type (in GDevelop JSON) is `RemoveObjectTimer`.
 
+!!! tip
+    Object timers are NOT started automatically when an object instance is created. Make sure to start the timer (e.g. with the "Start (or reset) an object timer" action) before using it.
+
 **Start (or reset) an object timer**  
 Reset the specified object timer, if the timer doesn't exist it's created and started.
 
@@ -548,6 +566,9 @@ Reset the specified object timer, if the timer doesn't exist it's created and st
     - Parameter 1 (🔤 Name (String)): Timer's name
 
     > Technical note: this action internal type (in GDevelop JSON) is `ResetObjectTimer`.
+
+!!! tip
+    Object timers are NOT started automatically when an object instance is created. Make sure to start the timer (e.g. with the "Start (or reset) an object timer" action) before using it.
 
 **Rotate**  
 Rotate an object, clockwise if the speed is positive, counterclockwise otherwise. For 3D objects, this is the rotation around the Z axis.
@@ -799,6 +820,9 @@ Unpause an object timer.
 
     > Technical note: this action internal type (in GDevelop JSON) is `UnPauseObjectTimer`.
 
+!!! tip
+    Object timers are NOT started automatically when an object instance is created. Make sure to start the timer (e.g. with the "Start (or reset) an object timer" action) before using it.
+
 
 ### Object conditions
 
@@ -947,6 +971,9 @@ Compare the elapsed time of an object timer. This condition doesn't start the ti
 
     > Technical note: this condition internal type (in GDevelop JSON) is `CompareObjectTimer`.
 
+!!! tip
+    Object timers are NOT started automatically when an object instance is created. Make sure to start the timer (e.g. with the "Start (or reset) an object timer" action) before using it.
+
 **Object is stopped (no forces applied on it)**  
 Check if an object is not moving
 
@@ -998,6 +1025,9 @@ Test if specified object timer is paused.
     - Parameter 1 (🔤 Name (String)): Timer's name
 
     > Technical note: this condition internal type (in GDevelop JSON) is `ObjectTimerPaused`.
+
+!!! tip
+    Object timers are NOT started automatically when an object instance is created. Make sure to start the timer (e.g. with the "Start (or reset) an object timer" action) before using it.
 
 **Boolean variable**  
 Compare the boolean value of an object variable.

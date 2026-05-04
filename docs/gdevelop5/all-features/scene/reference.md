@@ -4,6 +4,17 @@ Actions/conditions to change the current scene (or pause it and launch another o
 
 ## Actions
 
+**Preload object**  
+Preload an object resources in background.
+
+??? quote "See parameters & details"
+
+    - Parameter 1 (🔤 String): Object name
+
+    > Technical note: parameter 0 is an internal parameter handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `LoadObjectAssets`.
+
 **Stop and go back to previous scene**  
 Stop this scene and go back to the previous paused one.  
 To pause a scene, use the "Pause and start a new scene" action.
@@ -73,8 +84,30 @@ Change the background color of the scene.
 
     > Technical note: this action internal type (in GDevelop JSON) is `SceneBackground`.
 
+**Unload object**  
+Unload an object resources. The "resource preloading" property must be set to "preload with an action" for this action to actually unload resources.
+
+??? quote "See parameters & details"
+
+    - Parameter 1 (🔤 String): Object name
+
+    > Technical note: parameter 0 is an internal parameter handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `UnloadObjectAssets`.
+
 
 ## Conditions
+
+**Object preloaded**  
+Check if object resources have finished to load in background.
+
+??? quote "See parameters & details"
+
+    - Parameter 1 (🔤 String): Object name
+
+    > Technical note: parameter 0 is an internal parameter handled by GDevelop.
+
+    > Technical note: this condition internal type (in GDevelop JSON) is `AreObjectAssetsLoaded`.
 
 **Scene preloaded**  
 Check if scene resources have finished to load in background.
