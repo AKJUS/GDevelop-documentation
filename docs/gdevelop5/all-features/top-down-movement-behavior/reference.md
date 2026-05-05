@@ -185,6 +185,7 @@ Simulate a stick control.
     - Parameter 0: 👾 Object
     - Parameter 1: 🧩 Behavior
     - Parameter 2 (🔢 Number): Stick angle (in degrees)
+      In top-down movement, a stick angle of 0° moves the object to the right. 90° moves it down, and -90° moves it up.
     - Parameter 3 (🔢 Number): Stick force (between 0 and 1)
 
     > Technical note: this action internal type (in GDevelop JSON) is `TopDownMovementBehavior::SimulateStick`.

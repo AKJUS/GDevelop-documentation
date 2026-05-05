@@ -1448,9 +1448,14 @@ Simulate a stick control.
     - Parameter 0: 👾 Object
     - Parameter 1: 🧩 Behavior
     - Parameter 2 (🔢 Number): Stick angle (in degrees)
+      A stick angle for a 3D Physics character of 0° means the object will move to the right, 90° backward and -90° (or 270°) forward.
     - Parameter 3 (🔢 Number): Stick force (between 0 and 1)
 
     > Technical note: this action internal type (in GDevelop JSON) is `Physics3D::PhysicsCharacter3D::SimulateStick`.
+
+??? tip "Hints and advice"
+
+    Simulating a stick control is usually used for connecting gamepads. For NPCs, it's usually better to rotate them toward target & simulate forward key instead.
 
 
 ### Behavior conditions

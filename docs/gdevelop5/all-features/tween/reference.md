@@ -440,6 +440,10 @@ Tweens the object opacity from its current value to a new one (note: the value s
 
     > Technical note: this action internal type (in GDevelop JSON) is `Tween::TweenBehavior::AddObjectOpacityTween2`.
 
+??? tip "Hints and advice"
+
+    Tweening opacity only works on 2D objects, it has no effect/won't run on 3D objects.
+
 **Tween object position**  
 Tweens an object position from its current position to a new one.
 
