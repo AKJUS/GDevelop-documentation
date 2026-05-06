@@ -19,6 +19,33 @@ An example of scroll view can be found in the [multiplayer custom lobbies](https
 !!! tip
     Learn [how to install new extensions](/gdevelop5/extensions/search) by following a step-by-step guide.
 
+## Actions
+
+**Set camera from scroll**  
+Move the camera according to the scroll position.
+
+??? quote "See parameters & details"
+
+    - Parameter 1: 👾 Object
+    - Parameter 2 (🔤 Layer name (String)): Scrolled layer
+
+    > Technical note: parameters 0, 3 are internal parameters handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `Scrollbar::SetCameraFromPosition`.
+
+**Set scroll from camera**  
+Change the scroll position according to the camera.
+
+??? quote "See parameters & details"
+
+    - Parameter 1: 👾 Object
+    - Parameter 2 (🔤 Layer name (String)): Scrolled layer
+
+    > Technical note: parameters 0, 3 are internal parameters handled by GDevelop.
+
+    > Technical note: this action internal type (in GDevelop JSON) is `Scrollbar::SetPositionFromCamera`.
+
+
 
 
 ## Scrollbar 
@@ -51,34 +78,8 @@ Change the content length of the object. The length of the content to scroll. Th
 
     > Technical note: this action internal type (in GDevelop JSON) is `Scrollbar::Scrollbar::SetContentLength`.
 
-**Scroll bottom position**  
-Change the bottom position of the displayed part.
-
-??? quote "See parameters & details"
-
-    - Parameter 0: 👾 Object
-    - Parameter 1: 🟰 Operator
-    - Parameter 2 (🔢 Number): Value
-
-    > Technical note: parameter 3 is an internal parameter handled by GDevelop.
-
-    > Technical note: this action internal type (in GDevelop JSON) is `Scrollbar::Scrollbar::SetScrollBottom`.
-
-**Scroll center position**  
-Change the center position of the displayed part.
-
-??? quote "See parameters & details"
-
-    - Parameter 0: 👾 Object
-    - Parameter 1: 🟰 Operator
-    - Parameter 2 (🔢 Number): Value
-
-    > Technical note: parameter 3 is an internal parameter handled by GDevelop.
-
-    > Technical note: this action internal type (in GDevelop JSON) is `Scrollbar::Scrollbar::SetScrollCenter`.
-
-**Scroll top position**  
-Change the top position of the displayed part.
+**Scroll position**  
+Change the top or left position of the displayed part.
 
 ??? quote "See parameters & details"
 
@@ -128,8 +129,8 @@ Check if the thumb of the scrollbar is dragged.
 
     > Technical note: this condition internal type (in GDevelop JSON) is `Scrollbar::Scrollbar::IsThumbDragged`.
 
-**Scroll bottom position**  
-Compare the bottom position of the displayed part.
+**Scroll position**  
+Compare the top or left position of the displayed part.
 
 ??? quote "See parameters & details"
 
@@ -139,33 +140,7 @@ Compare the bottom position of the displayed part.
 
     > Technical note: parameter 3 is an internal parameter handled by GDevelop.
 
-    > Technical note: this condition internal type (in GDevelop JSON) is `Scrollbar::Scrollbar::ScrollBottom`.
-
-**Scroll center position**  
-Compare the center position of the displayed part.
-
-??? quote "See parameters & details"
-
-    - Parameter 0: 👾 Object
-    - Parameter 1: 🟰 Relational operator
-    - Parameter 2 (🔢 Number): Value to compare
-
-    > Technical note: parameter 3 is an internal parameter handled by GDevelop.
-
-    > Technical note: this condition internal type (in GDevelop JSON) is `Scrollbar::Scrollbar::ScrollCenter`.
-
-**Scroll top position**  
-Compare the top position of the displayed part.
-
-??? quote "See parameters & details"
-
-    - Parameter 0: 👾 Object
-    - Parameter 1: 🟰 Relational operator
-    - Parameter 2 (🔢 Number): Value to compare
-
-    > Technical note: parameter 3 is an internal parameter handled by GDevelop.
-
-    > Technical note: this condition internal type (in GDevelop JSON) is `Scrollbar::Scrollbar::ScrollTop`.
+    > Technical note: this condition internal type (in GDevelop JSON) is `Scrollbar::Scrollbar::ScrollPosition`.
 
 
 ### Object expressions
@@ -173,9 +148,7 @@ Compare the top position of the displayed part.
 | Expression | Description |  |
 |-----|-----|-----|
 | `Object.ContentLength()` | Return the content length of the object. The length of the content to scroll. The scroll bar don't actually scroll the content. You have to do it yourself with camera actions. ||
-| `Object.ScrollBottom()` | Return the bottom position of the displayed part. ||
-| `Object.ScrollCenter()` | Return the center position of the displayed part. ||
-| `Object.ScrollTop()` | Return the top position of the displayed part. ||
+| `Object.ScrollPosition()` | Return the top or left position of the displayed part. ||
 
 
 ---
